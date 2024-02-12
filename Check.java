@@ -14,7 +14,21 @@ public class Check {
         if (phoneNumber.length() < 10 || phoneNumber.length() > 10) {
                 throw new ArrayStoreException("Неверное количество символов в номере телефона. Их должно быть 10");
             }
-            
+//             дравствуйте? Что поправить? Можно проверить является ли
+//строка числом так: ваша_строка.matches("[\d]+") - если это true,
+//значит в строке целое число.
+
+// Второй способ:
+
+// try {
+// Double.parseDouble(ваша строка);
+// return true;
+// } catch(NumberFormatException e) {return false;}
+
+// только этот код в отдельный boolean метод вынести нужно
+
+// 18:57
+
         Integer phone;
 
         try {
